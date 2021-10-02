@@ -1,19 +1,14 @@
-Oct  2 14:50:00 telaviv1 postfix/master[1079614]: terminating on signal 15
-Oct  2 14:50:00 telaviv1 postfix[1079642]: Postfix is running with backwards-compatible default settings
-Oct  2 14:50:00 telaviv1 postfix[1079642]: See http://www.postfix.org/COMPATIBILITY_README.html for details
-Oct  2 14:50:00 telaviv1 postfix[1079642]: To disable backwards compatibility use "postconf compatibility_level=2" and "postfix reload"
-Oct  2 14:50:01 telaviv1 postfix/postfix-script[1079697]: warning: group or other writable: /etc/postfix/./FOO-key.pem
-Oct  2 14:50:01 telaviv1 postfix/postfix-script[1079698]: warning: group or other writable: /etc/postfix/./FOO-cert.pem
-Oct  2 14:50:01 telaviv1 postfix/postfix-script[1079699]: warning: group or other writable: /etc/postfix/./cacert.pem
-Oct  2 14:50:01 telaviv1 postfix/postfix-script[1079711]: starting the Postfix mail system
-Oct  2 14:50:01 telaviv1 postfix/master[1079713]: daemon started -- version 3.5.10, configuration /etc/postfix
-Oct  2 14:50:08 telaviv1 postfix/smtpd[1079717]: warning: dict_nis_init: NIS domain name not set - NIS lookups disabled
-Oct  2 14:50:08 telaviv1 postfix/smtpd[1079717]: warning: cannot get RSA private key from file "/etc/postfix/FOO-key.pem": disabling TLS support
-Oct  2 14:50:08 telaviv1 postfix/smtpd[1079717]: warning: TLS library problem: error:02001002:system library:fopen:No such file or directory:crypto/bio/bss_file.c:288:fopen('/etc/postfix/FOO-key.pem','r'):
-Oct  2 14:50:08 telaviv1 postfix/smtpd[1079717]: warning: TLS library problem: error:20074002:BIO routines:file_ctrl:system lib:crypto/bio/bss_file.c:290:
-Oct  2 14:50:08 telaviv1 postfix/smtpd[1079717]: warning: TLS library problem: error:140B0002:SSL routines:SSL_CTX_use_PrivateKey_file:system lib:ssl/ssl_rsa.c:521:
-Oct  2 14:50:08 telaviv1 postfix/smtpd[1079717]: connect from unknown[127.0.0.1]
-Oct  2 14:50:08 telaviv1 postfix/smtpd[1079717]: warning: support for restriction "check_relay_domains" will be removed from Postfix; use "reject_unauth_destination" instead
-Oct  2 14:50:08 telaviv1 postfix/smtpd[1079717]: NOQUEUE: reject: RCPT from unknown[127.0.0.1]: 554 5.7.1 <shlomif@gmail.com>: Recipient address rejected: Relay access denied; from=<shlomif@shlomifish.org> to=<shlomif@gmail.com> proto=ESMTP helo=<localhost>
-Oct  2 14:50:08 telaviv1 postfix/smtpd[1079717]: lost connection after RCPT from unknown[127.0.0.1]
-Oct  2 14:50:08 telaviv1 postfix/smtpd[1079717]: disconnect from unknown[127.0.0.1] ehlo=1 mail=1 rcpt=0/1 commands=2/3
+Oct  2 18:22:28 telaviv1 postfix[1085509]: Postfix is running with backwards-compatible default settings
+Oct  2 18:22:28 telaviv1 postfix[1085509]: See http://www.postfix.org/COMPATIBILITY_README.html for details
+Oct  2 18:22:28 telaviv1 postfix[1085509]: To disable backwards compatibility use "postconf compatibility_level=2" and "postfix reload"
+Oct  2 18:22:28 telaviv1 postfix/postfix-script[1085565]: warning: group or other writable: /etc/postfix/./FOO-key.pem
+Oct  2 18:22:28 telaviv1 postfix/postfix-script[1085566]: warning: group or other writable: /etc/postfix/./FOO-cert.pem
+Oct  2 18:22:28 telaviv1 postfix/postfix-script[1085567]: warning: group or other writable: /etc/postfix/./cacert.pem
+Oct  2 18:22:28 telaviv1 postfix/postfix-script[1085579]: starting the Postfix mail system
+Oct  2 18:22:28 telaviv1 postfix/master[1085581]: daemon started -- version 3.5.10, configuration /etc/postfix
+Oct  2 18:22:57 telaviv1 postfix/smtpd[1085592]: warning: dict_nis_init: NIS domain name not set - NIS lookups disabled
+Oct  2 18:22:57 telaviv1 postfix/smtpd[1085592]: connect from unknown[127.0.0.1]
+Oct  2 18:22:57 telaviv1 postfix/smtpd[1085592]: warning: support for restriction "check_relay_domains" will be removed from Postfix; use "reject_unauth_destination" instead
+Oct  2 18:22:57 telaviv1 postfix/smtpd[1085592]: NOQUEUE: reject: RCPT from unknown[127.0.0.1]: 554 5.7.1 <shlomif@gmail.com>: Recipient address rejected: Relay access denied; from=<shlomif@shlomifish.org> to=<shlomif@gmail.com> proto=ESMTP helo=<localhost>
+Oct  2 18:22:57 telaviv1 postfix/smtpd[1085592]: lost connection after RCPT from unknown[127.0.0.1]
+Oct  2 18:22:57 telaviv1 postfix/smtpd[1085592]: disconnect from unknown[127.0.0.1] ehlo=1 mail=1 rcpt=0/1 commands=2/3
